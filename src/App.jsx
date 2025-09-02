@@ -1,5 +1,6 @@
 // src/App.jsx
 import './App.css';
+import { useState } from 'react';
 import IngredientList from './components/IngredientList/IngredientList';
 import BurgerStack from './components/BurgerStack/BurgerStack';
 
@@ -20,6 +21,8 @@ const App = () => {
     { name: 'Cheddar Cheese', color: '#FDE18B' },
     { name: 'Swiss Cheese', color: '#F1E1A8' },
   ];
+
+  const [stack, setStack] = useState([]);
 
   return (
     <main>
